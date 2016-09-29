@@ -1,19 +1,20 @@
 #include <stdio.h>
 
-int main()
+int
+main ()
 {
   char tmpname[L_tmpnam];
-  char *filename; 
+  char *filename;
   FILE *tmpfp;
 
-  filename = tmpnam(tmpname);
+  filename = tmpnam (tmpname);
 
-  printf("Temporary file name is: %s\n", filename);
+  printf ("Temporary file name is: %s\n", filename);
 
-  tmpfp = tmpfile();
-  if(tmpfp)
-    printf("Opened a temporary file OK\n");
+  tmpfp = tmpfile ();
+  if (tmpfp)
+    printf ("Opened a temporary file OK\n");
   else
-    perror("tmpfile");
-  return(0);
+    perror ("tmpfile");
+  return (0);
 }
