@@ -1,0 +1,32 @@
+Chapter 4 - The UNIX Environment:
+
+args.c     - Splits command-line options from arguments.
+
+argopt.c   - Extended to flag up illegal options, and expect arguments
+             following some options.
+
+environ.c  - Prints out the values of valid environment variables.
+
+showenv.c  - Prints out all the environment variables and their current
+             values.
+
+envtime.c  - Prints UNIX time, from the start of the epoch.
+
+gmtime.c   - Prints human (UTC) time.
+
+ctime.c    - Converts raw time to UTC time.
+
+strftime.c - Gives you more control over the look of the time output.
+
+tmpnam.c   - Creates a unique temporary file.
+
+user.c     - Finds out information about the user from password file.
+
+hostget.c  - Gets information about the host computer.
+
+syslog.c   - Write message to syslog on program error.
+
+logmask.c  - Needs Linux kernels later than 1.2.11. Uses logmask to only log
+             messages of a certain priority.
+
+limits.c   - Pushing resource limits.
