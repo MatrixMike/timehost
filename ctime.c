@@ -1,12 +1,11 @@
 #include <time.h>
 #include <stdio.h>
 
-int
-main ()
+int main()
 {
-  time_t timeval;
+	time_t timeval;
 
-  (void) time (&timeval);
-  printf ("The date is: %s", ctime (&timeval));
-  return (0);
+	(void)time(&timeval);
+	printf("The date is: %s", ctime(&timeval));
+	return (0);
 }

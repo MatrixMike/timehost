@@ -2,15 +2,14 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int
-main ()
+int main()
 {
-  int logmask;
+	int logmask;
 
-  openlog ("logmask", LOG_PID | LOG_CONS, LOG_USER);
-  syslog (LOG_INFO, "informative message, pid = %d", getpid ());
-  syslog (LOG_DEBUG, "debug message, should appear");
-  logmask = setlogmask (LOG_MASK (LOG_DEBUG));
-  syslog (LOG_DEBUG, "debug message, should not appear");
-  return (0);
+	openlog("logmask", LOG_PID | LOG_CONS, LOG_USER);
+	syslog(LOG_INFO, "informative message, pid = %d", getpid());
+	syslog(LOG_DEBUG, "debug message, should appear");
+	logmask = setlogmask(LOG_MASK(LOG_DEBUG));
+	syslog(LOG_DEBUG, "debug message, should not appear");
+	return (0);
 }
