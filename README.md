@@ -1,2 +1,2 @@
 # timehost
-Some c examples e.g. time, environment and host
+Some c examples e.g. time, environment and host - chap04
