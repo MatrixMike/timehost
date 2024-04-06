@@ -9,5 +9,6 @@ int main()
 	f = fopen("not_here", "r");
 	if (!f)
 		syslog(LOG_ERR | LOG_USER, "oops - %m\n");
+	fclose(f);
 	return (0);
 }

@@ -6,7 +6,7 @@ int main()
 	char *filename;
 	FILE *tmpfp;
 
-	filename = tmpnam(tmpname);
+	filename = mkstemp(tmpname);  // was tmpnam
 
 	printf("Temporary file name is: %s\n", filename);
 
